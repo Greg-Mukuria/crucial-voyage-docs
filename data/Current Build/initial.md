@@ -5,9 +5,9 @@ createdAt: '2023-8-5'
 
 To be deprecated on 7th Aug 2023 for V2
 
-Our team at Xcelero has been tasked with the creatinon of a fullstack web infrustructure for Crucial Voyages LLC. The task will be divided into two sections, the frontend and the backend which will be connected using N2IR system links, so as to simplify the build.
+Our team at Xcelero has been tasked with the creation of a full-stack web infrastructure for Crucial Voyages LLC. The task will be divided into two sections, the frontend and the backend which will be connected using N2IR system links, so as to simplify the build.
 
-The designs will be linked below to show what out initial ideas were and what we settled for.
+The designs will be linked below to show what our initial ideas were and what we settled for.
 
 The build components will be listed here 
 - Javascript.
@@ -215,29 +215,29 @@ export async function POST(request: Request) {
 - Error handling in this snippet is basic. Depending on your requirements, you might need more detailed error handling.
 ```
 
-Please note that deletion is upto a DELETE method as delete function, PATCH method as a update function but the bodies of both requests and responses will be exactly the same.
+Please note that deletion is up to a DELETE method as delete function, PATCH method as an update function but the bodies of both requests and responses will be exactly the same.
 
 
 
 
 # Version 2
 
-Note: This is version 2 of the api endpoints ( Not Applicable: Development Stalled )
-The build idea will have the following things in place by second draft. 
+Note: This is version 2 of the API endpoints ( Not Applicable: Development Stalled )
+The build idea will have the following things in place by the second draft. 
 - Crud functions for creating trips.
     ## Create a trip
-        - Creation of a trip means that the user can create a trip to a destionation and choose (via a graphics user interface with cards or map system). This will allow the user to choose between solo travel, Family Pack, For Organisations. 
+        - Creation of a trip means that the user can create a trip to a destination and choose (via a graphics user interface with cards or a map system). This will allow the user to choose between solo travel, Family Pack, and For Organisations. 
 
-        - The next aspects are forms that can collect data from the user and submit it to an api end point. Prefereably 
+        - The next aspects are forms that can collect data from the user and submit it to an API endpoint. Preferably 
             - /api/v2/solo-travel/new-trip/trip-iD
             - /api/v2/family-pack/new-trip/trip-iD
             - /api/v2/for-organizations/new-trip/trip-iD
 
         We can create a timer element that will count down to the date of expiry.
-        The nuber of participants travelling will be noted and data collected will be stored for further transmissions
+        The number of participants traveling will be noted and data collected will be stored for further transmissions
 
     ## Delete a trip
-        - Simply the ability to delete the trip from the users account in all modes of booking logic. 
+        - Simply the ability to delete the trip from the user's account in all modes of booking logic. 
 
         - The api endpoints will look like this
             - /api/v2/solo-travel/discard-trip/trip-iD
@@ -252,35 +252,35 @@ The build idea will have the following things in place by second draft.
             - /api/v2/for-organizations/review-trip/trip-iD
 
     ## Update a trip
-        For updating the trips a user has created, the enpoints will be
+        For updating the trips a user has created, the endpoints will be
         - The api endpoints will look like this
             - /api/v2/solo-travel/change-trip/trip-iD
             - /api/v2/family-pack/change-trip/trip-iD
             - /api/v2/for-organizations/change-trip/trip-iD
 
     ## Payments and Billing 
-        For updating the trips payments a user has created, the enpoints will be
+        For updating the payments of the trip a user has created, the endpoints will be
         - The api endpoints will look like this
             - /api/v2/solo-travel/LandedPayments/paymentId
             - /api/v2/family-pack/LandedPayments/paymentId
             - /api/v2/for-organizations/LandedPayments/paymentId
 
     ## Maps, Logistics and Services
-        Maps used in the project are dynamic in version 1 but implementation of a GoogleMaps or AppleMaps api 
-        For simulation purposes this elements will not be publicly available
+        Maps used in the project are dynamic in version 1 but the implementation of a GoogleMaps or AppleMaps API 
+        For simulation purposes, these elements will not be publicly available
         - The api endpoints will look like this
 
             - /api/v2/solo-travel/mapId/experienceID
             - /api/v2/family-pack/mapId/experienceID
             - /api/v2/for-organizations/mapId/experienceID
 
-    - Trips include in-bound, outbound and domestic trips. 
+    - Trips include inbound, outbound, and domestic trips. 
 
     ## Outbound Trips
-    Outbound trips will be categorized on its own for simplicity sake. These will include world-wide places of travel. 
+    Outbound trips will be categorized on its own for simplicity's sake. These will include worldwide places of travel. 
 
     ## Domestic Trips
-    Domestic trips will be categorized on its own for simplicity sake. These will include domestic places of travel.
+    Domestic trips will be categorized on its own for simplicity's sake. These will include domestic places of travel.
 
     Protected Routes will be present. These routes will be poised for super administrative access. 
-    Of course master passwords will conveyed. 
+    Of course, master passwords will be conveyed. 
